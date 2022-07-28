@@ -4,6 +4,6 @@ resource "heroku_app" "searaembu" {
 }
 
 resource "heroku_addon" "postgres" {
-  app  = heroku_app.searaembu.id
+  app  = heroku_app.searaembu.name
   plan = "heroku-postgresql:hobby-dev"
 }
