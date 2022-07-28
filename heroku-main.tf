@@ -1,4 +1,4 @@
-resource "heroku_app" "seara" {
-  name   = "seara"
+resource "heroku_app" "searaembu" {
+  name   = "searaembu"
   region = "us"
 }
