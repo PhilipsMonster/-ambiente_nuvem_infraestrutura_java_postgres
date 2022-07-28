@@ -3,7 +3,7 @@ resource "heroku_app" "searaembu" {
   region = "us"
 }
 
-resource "heroku_addon" "postgres" {
-  app  = heroku_app.searaembu.name
-  plan = "heroku-postgresql:hobby-dev"
+resource "heroku_addon" "database" {
+  app_id = heroku_app.searaembu.id
+  plan   = "heroku-postgresql:hobby-dev"
 }
