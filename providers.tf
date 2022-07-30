@@ -1,4 +1,4 @@
-#Configura o Provider Heroku com o Projeto
+# Configura o Provider Heroku com o Projeto
 terraform {
   required_providers {
     heroku = {
